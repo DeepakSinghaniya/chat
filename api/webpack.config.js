@@ -16,6 +16,7 @@ module.exports = {
   },
   externals: [nodeExternals()], // Need this to avoid error when working with Express
   module: {
+    exprContextCritical: false,
     rules: [
       {
         // Transpiles ES6-8 into ES5
